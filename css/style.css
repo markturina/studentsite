@@ -18,6 +18,11 @@ body {
 p { max-width: 35em; }
 a { text-decoration: none; }
 
+/* SITE STRUCTURE */
+.site-header {
+    display: flex;
+}
+
 
 /* FOR TESTING ONLY */
 
