@@ -1,0 +1,30 @@
+/* GLOBAL RESET */
+* { box-sizing: border-box; }
+body { margin: 0; }
+
+/* GLOBAL COLORS  */
+body {
+    background-color: rgba(0,0,0,1);
+    color: rgba(255,255,255,.8);
+}
+a { color: rgba(255,255,51,1); }
+
+/* GLOBAL TYPOGRAPHY */
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 88.75%; /* 14px */
+    line-height: 1.4;
+}
+p { max-width: 35em; }
+a { text-decoration: none; }
+
+
+/* FOR TESTING ONLY */
+
+*, body {
+    background: rgba (0,0,0,.1);
+    border: 1px solid black; 
+}
+.site-header { background-color: rgba(255,0,0,.3); }
+.site-id { background-color: rgba(255,0,0,.3); }
+.site-nav { background-color: rgba(255,0,0,.3); }
