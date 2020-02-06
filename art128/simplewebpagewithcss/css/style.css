@@ -1,0 +1,69 @@
+/* BASE (Initial Setup)
+=====================================
+    #BASE TYPOGRPAHY
+        #BODY
+        #HEADINGS
+        #PARAGRAPHS
+        #LINKS
+ ===================================== */
+ 
+ /* #BODY */
+ body {
+     font-family: Helvetica, Arial, sans-serif;
+     color: #333;
+     font-size: 100%; /* 16px; */
+     line-height: 1.5em; /* 16px x 1.5em = 24px */
+     background: #eee;
+ }
+
+ /* #HEADINGS
+        Based on a Traditional Typographic Scale
+        48, 36, 24, 21, 18, 16
+*/
+
+h1, h2, h3, h4, h5, h6 {
+        margin: .5em 0;
+}
+
+h1 {
+    font-size: 3em; /*48px / 16px = 3em */
+    line-height: 1em;
+}
+
+h2 {
+	font-size: 2.25em; /* 36px / 16px = 2.25em */
+	line-height: 1.1em;
+}
+
+h3 {
+	font-size: 1.5em; /* 24px / 16px = 1.5em */
+	line-height: 1.2em;
+}
+
+h4 {
+	font-size: 1.3125em; /* 21px / 16px = 1.3125em */
+	line-height: 1.3em;
+}
+
+h5 {
+	font-size: 1.125em; /* 18px / 16px = 1.125em */
+	line-height: 1.4em;
+}
+
+h6 {
+	font-size: 1em; /* 16px / 16px = 1em */
+	line-height: 1.5em;
+}
+
+/* #PARAGRAPHS */
+p {
+	margin: 0 0 .5em 0;
+	max-width: 35em;
+}
+
+
+/* #LINKS */
+a { color: #39c; text-decoration: none; }
+a:hover { color: #069; text-decoration: underline; }
+a:focus { color: #39c; }
+a:visited { color: #39c; }
