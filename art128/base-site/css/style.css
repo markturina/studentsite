@@ -87,6 +87,8 @@ p {
     max-width: 35em;
 }   
 
+/* LINKS */
+
 a { 
     color: rgb(0, 51, 102, 1);
     text-decoration: none;
@@ -95,6 +97,12 @@ a {
 a:hover {
     color: (0,0,51,1);
     text-decoration: underline;
+}
+
+/* MEDIA */
+img {
+    max-width: 100%;
+    height: auto;
 }
 
 /* BUTTONS */
@@ -219,12 +227,19 @@ body {
 }
 
 
-.site-header a {
+.site-header a, 
+.site-footer a {
     color: rgba(0,0,0,.8);
     text-decoration: none;
 }
-.site-header a:hover {
+.site-header a:hover,
+.site-footer a:hover {
     color: rgba(0,0,0,1);
+}
+
+/* SITE FOOTER */
+.site-footer {
+    padding: 2em;
 }
 
 /* SITE ID (LOGO) */
@@ -243,6 +258,7 @@ body {
 .site-nav ul {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     margin: 0;
     padding: 0;
 }
@@ -255,6 +271,36 @@ body {
     display: block;
     padding: .5em 1em;
 }
+
+/* SITE MAIN (Main Content Area)*/
+
+.site-main {
+
+}
+
+/* SECTIONS */
+
+section { 
+    padding: 4em 0;
+}
+
+.hero {
+    text-align: center;
+    background-color: rgba(204,204,204,1);
+    padding: 6em 1em;
+}
+
+.hero h2 {
+    font-size: 3em;
+
+}
+
+.hero p {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
 
 
 
