@@ -250,7 +250,7 @@ body {
 }
 
 .site-id a {
-    display: block;
+    display: inline-block;
     padding: .25em 0;
 }
 
@@ -273,45 +273,94 @@ body {
 }
 
 /* MENU BUTTON */
+
 .menu-button {
     position: absolute;
     left:-9999px;
-    padding: .5em 1em;
+    padding: .5em;
+}
+
+.menu-button::selection {
+    color: none;
+    background: none;
 }
 
 .menu-button:hover {
     cursor: pointer;
 }
 
-
 /* TOGGLE-NAV */
+
 @media (max-width: 767px) {
+
+   .toggle-nav .site-id h1 {
+        text-align: left;
+   }
+   
     .toggle-nav .menu-button {
-        position: static;
+        position: absolute;
         left: auto;
+        top: 1.25em;
+        right: 1em;
     }
+
+    .toggle-nav .site-nav {
+        text-align: center;
+    }
+
+    /* HIDE NAV ON SMALL SCREENS BY DEFAULT */
 
     .toggle-nav .site-nav ul {
         position: absolute;
         left: -9999px;
     }
 
-    .toggle-nav .site-nav {
-        text-align: right;
+    .toggle-nav .site-nav a:hover {
+        background: rgba(0,0,51,1);
+        color: white;
     }
 
+    /* SHOW NAV ON SMALL SCREENS WHEN EXPANDED CLASS IS TOGGLED */
     .toggle-nav.expanded .site-nav ul {
         position: static;
         left: auto;
         display: block;
+        margin-top: 1em;
     }
 
-    .toggle-nav .container {
-        display: flex;
-        justify-content: space-between;
+    .toggle-nav.expanded .site-nav a {
+        background: rgba(0,51,102,1);
+        color: rgba(255,255,255,1);
+        margin: .5em 0;
+        padding: 1em;
     }
 
+    .toggle-nav.expanded .site-nav a:hover {
+        background: rgba(0, 0, 51, 1);
+    }
 }
+
+/* NAVICON */
+
+.navicon {
+    color: rgba(0,0,0,0);
+    padding: 0;
+}
+
+.navicon::after { 
+    content: "\2630";
+    display: inline-block;
+    color: rgba(0,0,0,1);
+    font-size: 1.5em;
+    transform: rotate(0deg);
+}
+
+.expanded .navicon::after {
+    content:"\2715";
+    transform: rotate(-90deg);
+    transition: transform .4s ease-out;
+}
+
 
 /* SITE MAIN (Main Content Area)*/
 
@@ -418,4 +467,5 @@ padding: .5em;
 .site-footer { 
     background-color: rgba(255,255,0,0.4);
     box-shadow: 0 0 3px inset rgba(255,255,0,1); 
-}  */
+}  
+*/
