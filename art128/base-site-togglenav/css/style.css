@@ -313,6 +313,7 @@ body {
     .toggle-nav .site-nav ul {
         position: absolute;
         left: -9999px;
+        margin-top: 1em;
     }
 
     .toggle-nav .site-nav a:hover {
@@ -339,6 +340,16 @@ body {
         background: rgba(0, 0, 51, 1);
     }
 }
+
+/* ANIMATING THE TOGGLE NAV */
+    .toggle-nav .site-nav ul {
+        transition: all 1s ease;
+        max-height: 0;
+}
+
+    .toggle-nav.expanded .site-nav ul {
+        max-height: 400px;
+    }
 
 /* NAVICON */
 
