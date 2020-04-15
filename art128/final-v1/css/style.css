@@ -111,7 +111,7 @@ h6 {
 /* PARAGRAPHS */
 p { 
     max-width: 35em;
-    font-size: .8em;
+    font-size: .85em;
     line-height: 1.75;
 }   
 
@@ -189,12 +189,12 @@ input[type="submit"]:hover {
     font-family: 'ubuntu', arial;
     font-weight: 700;
     background-color: transparent;
-    border: 1px solid rgb(0,0,51,1);  
+    border: 1px solid  rgb(74, 58, 142, 1);  
     color: rgb(0,0,51,1);  
 }
 
 .button.alt:hover {
-    background-color: rgb(0,0,51,1);  
+    background-color:  rgb(38, 42, 116);  
     color: rgb(255,255,255,1);
     text-decoration: none;
 }
@@ -509,7 +509,7 @@ section:last-child {
 } 
 
 #course-map {
-    padding-top: 150px;
+    padding-top: 120px;
     margin-bottom: -7px;
 }
 
@@ -663,6 +663,47 @@ section:last-child {
 .direction-text {
     padding-left: 50px;
 }
+
+.gallery {
+    background-color: #E7DED7;
+    padding-top: 100px;
+    margin-top: 200px;
+}
+
+.flex-container {
+    display: flex;
+    flex-flow: row wrap;
+    margin-top: -175px;
+    padding: 0;
+    height: 400px;
+}
+
+.flex-container>div {
+    width: 100%;
+    padding: 0 4px;
+    flex-grow: 1;
+}
+
+.contact {
+    background-color:#E7DED7;
+    height: 250px;
+    margin-right: 0;
+    justify-content: center;
+}
+
+.contact p {
+    text-align: right;
+    margin: 0;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    justify-content: center;
+}
+
+.contact a {
+    margin: 0;
+}
+
+
 
 /* ARTICLES */
 article {
