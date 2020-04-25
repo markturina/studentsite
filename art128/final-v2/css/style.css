@@ -246,6 +246,13 @@ body {
     margin-bottom: 1%; 
 }
 
+@media (max-width: 767px) {
+    .column {
+        margin-top: 0;
+        margin-bottom: 0; 
+    }
+}
+
 @media (min-width: 768px) {
     .row {
         display: flex;
@@ -488,28 +495,7 @@ body {
 
 section { 
     padding: 0em;
-}
-
-section:nth-child(even) {
-    background-color: rgba(0,0,0,.025);
-}
-
-section:last-child {
-    padding-bottom: 0em;
-}
-
-.sectionhead {
-    padding-top: 2em;
-    margin-bottom: 3em;
-    text-align: center;
-}
-
-.sectionhead:after {
-    content: "";
-    display: block;
-    width: 50px;
-    border-bottom: 3px solid rgba(0,0,0,.1);
-    margin: 0.5em auto;
+    margin: 0;
 }
 
 #hero { 
@@ -521,9 +507,22 @@ section:last-child {
     background-size: 75%;
 } 
 
-#course-map {
+@media (max-width: 767px) {
+    #hero {
+        background-size: 275%;
+        background-position: center left;
+    }
+}
+
+#course-map {   
     padding-top: 120px;
     margin-bottom: -7px;
+}
+
+@media (max-width: 767px) {
+    #course-map {   
+        padding-top: 50px;
+    }
 }
 
 
@@ -537,13 +536,15 @@ section:last-child {
 
 .hero {
     text-align: left;
-    padding: 6em 1em;
+    padding-top: 1em;
+    padding-bottom: 0;
     margin-top: -55px;
+    height: 100%;
 }
 
 .hero h1 {
     margin-left: 50px;
-    margin-top: 45px;
+    padding-top: .5em;
 }
 
 .hero h2 {
@@ -554,17 +555,25 @@ section:last-child {
 }
 
 .hero p {
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 50px;
+    margin-bottom: 0;
+    margin-right: 0;
+    margin-top: 0;
+    text-align: left;
+    padding-bottom: 4em;
 }
 
 .hero a {
-    margin-left: 50px;
+    margin-left: 0;
 }
 
 
 
 /* CUSTOM SECTIONS */
+
+.about {
+    padding-top: 0;
+}
 
 .twinpic {
     width: 100%;
@@ -580,6 +589,20 @@ section:last-child {
     bottom: 0;
     left: 0;
     padding-right: 50px;
+}
+
+@media (max-width: 767px) {
+    .twinrocks-bottom {
+        position: relative;
+        padding-top: 30px;
+        padding-bottom: 0;
+        padding-right: 30px;
+        padding-left: 30px;
+        margin-bottom: -80px;
+    }
+    .twinpic {
+        padding:0;
+    }
 }
 
 .twinabout {
