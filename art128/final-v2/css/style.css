@@ -609,6 +609,7 @@ section {
     width: 100%;
     padding-top: 100px;
     padding-left: 50px;
+    padding-right: 50px;
     padding-bottom: 20px;
     background-color: #E7DED7;
     margin: 0;
@@ -666,7 +667,7 @@ section {
     width: 100%;
     height: 275px;
     background-color:#1F1F1F;
-    padding: 30px 0px 0px 50px;
+    padding: 30px 50px 0px 50px;
     margin-right: 0px;
 }
 
@@ -719,6 +720,16 @@ section {
     padding-left: 80px;
 }
 
+@media (max-width: 767px) {
+    .accommodations {
+        padding-top: 50px;
+    }
+    .hotel-text {   
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}
+
 .hotel-buttons {
     padding-top: 80px;
     padding-left: 50px;
@@ -730,6 +741,23 @@ section {
 
 .direction-text {
     padding-left: 50px;
+    padding-right: 50px;
+}
+
+@media (max-width: 767px) {
+    .directions {
+        display: none;
+    }
+}
+
+.directions-mobile {
+    padding-top: 50px;
+}
+
+@media (min-width: 768px) {
+    .directions-mobile {
+        display: none;
+    }
 }
 
 .gallery {
