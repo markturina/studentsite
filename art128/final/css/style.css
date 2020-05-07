@@ -442,14 +442,14 @@ body {
     }
 
     .toggle-nav.expanded .site-nav a {
-        background: rgba(0,51,102,1);
+        background: rgb(74, 58, 142, .9);
         color: rgba(255,255,255,1);
-        margin: .5em 0;
+        margin: 0;
         padding: 1em;
     }
 
     .toggle-nav.expanded .site-nav a:hover {
-        background: rgba(0, 0, 51, 1);
+        background: rgb(38, 42, 116);
     }
 }
 
