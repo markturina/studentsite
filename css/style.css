@@ -4,10 +4,10 @@ body { margin: 0; }
 
 /* GLOBAL COLORS  */
 body {
-    background-color: rgba(0,0,0,1);
+    background-color: rgba(84, 131, 123, 1);
     color: rgba(255,255,255,.8);
 }
-a { color: rgba(255,255,51,1); }
+a { color: rgb(130, 212, 199); }
 
 /* GLOBAL TYPOGRAPHY */
 body {
@@ -23,6 +23,12 @@ body {
     min-height: 100vh;
     display: grid;
     grid-template-rows: auto 1fr;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1000px;
+    padding: 0 1em;
 }
 
 /* SITE STRUCTURE */
@@ -58,6 +64,28 @@ body {
     align-items: center;
 }
 
+/* TWO COLUMN LIST  */
+.list-two-col {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.list-two-col ul {
+    margin-bottom:1em;
+}
+
+.list-two-col ul ul {
+    margin-bottom:0em;
+}
+
+.list-two-col li {
+    padding-right: 1em;
+}
+
+/* ASSIGNMENTS */
+.list-assignments li li {
+    color: rgba(255,255,255,.4)
+}
 
 /* FOR TESTING ONLY */
 
